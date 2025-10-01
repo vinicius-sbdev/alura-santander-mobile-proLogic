@@ -1,15 +1,13 @@
-alert('Boas-vindas ao nosso site!');
-let nome = 'Lua';
-let idade = 25;
-let numeroDeVendas = 50;
-let saldoDisponivel = 1000;
-let mensagemErro = 'Erro! Preencha todos os campos'
-alert(mensagemErro)
-let nomeUser = prompt('Digite seu nome: ')
-let idadeUser = prompt('Digite sua idade: ')
+alert('Boas-vindas ao jogo do número secreto!');
+let numeroSecreto = 8;
+console.log(numeroSecreto)
+let numeroJogador = prompt('Escolha um número entre 1 e 10')
+console.log(`Valor do chute: ${numeroJogador}`)
 
-if (idadeUser >= 18){
-    alert(nomeUser + '!' + ' Você tem ' + idadeUser + ' anos de idade. Você pode tirar sua habilitação!')
-} else{
-    alert(nomeUser + '!' + ' Você tem ' + idadeUser + ' anos de idade. Você precisa ter 18 anos ou mais para tirar a habilitação!')
+//Se o chute for igual ao numero secreto
+if (numeroJogador == numeroSecreto){
+    alert(`Parábens! Você acertou o número secreto!' ${numeroSecreto}`);
+} else {
+    alert('Você errou :(')
+    console.log(`O número secreto era ${numeroSecreto}`)
 }
