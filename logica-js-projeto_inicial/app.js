@@ -1,13 +1,25 @@
 alert('Boas-vindas ao jogo do número secreto!');
 let numeroSecreto = 8;
-console.log(numeroSecreto)
-let numeroJogador = prompt('Escolha um número entre 1 e 10')
-console.log(`Valor do chute: ${numeroJogador}`)
+console.log(numeroSecreto);
+let numeroJogador;
+let tentativas = 1;
 
-//Se o chute for igual ao numero secreto
-if (numeroJogador == numeroSecreto){
-    alert(`Parábens! Você acertou o número secreto!' ${numeroSecreto}`);
-} else {
-    alert('Você errou :(')
-    console.log(`O número secreto era ${numeroSecreto}`)
+//Enquanto o numeroJogardor for diferente do numeroSecreto, o loop estará ativo
+while (numeroJogador != numeroSecreto){
+ numeroJogador = prompt('Escolha um número entre 1 e 10')
+     //Se o chute for igual ao numero secreto
+    if (numeroJogador == numeroSecreto){
+        alert(`Parábens! Você acertou o número secreto ${numeroSecreto} em ${tentativas} tentativa(s)`);
+    } else {
+        
+        if (numeroJogador > numeroSecreto){
+            alert(`O número secreto é menor que ${numeroJogador}`);
+        } else {
+            alert(`O número secreto é maior que ${numeroJogador}`);
+        }
+        //tentativas = tentativas + 1;
+        tentativas++;
+    }
+    
+
 }
