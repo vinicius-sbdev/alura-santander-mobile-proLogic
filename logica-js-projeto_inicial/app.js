@@ -9,9 +9,8 @@ while (numeroJogador != numeroSecreto){
  numeroJogador = prompt('Escolha um número entre 1 e 10')
      //Se o chute for igual ao numero secreto
     if (numeroJogador == numeroSecreto){
-        alert(`Parábens! Você acertou o número secreto ${numeroSecreto} em ${tentativas} tentativa(s)`);
+        break;
     } else {
-        
         if (numeroJogador > numeroSecreto){
             alert(`O número secreto é menor que ${numeroJogador}`);
         } else {
@@ -20,6 +19,10 @@ while (numeroJogador != numeroSecreto){
         //tentativas = tentativas + 1;
         tentativas++;
     }
-    
+}
 
+if (tentativas > 1){
+    alert(`Parábens! Você acertou o número secreto ${numeroSecreto} em ${tentativas} tentativas`);
+} else {
+    alert(`Parábens! Você acertou o número secreto ${numeroSecreto} em ${tentativas} tentativa.`);
 }
