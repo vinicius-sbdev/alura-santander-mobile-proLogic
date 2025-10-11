@@ -1,6 +1,6 @@
 function jogoNS(){
     alert('Boas-vindas ao nosso jogo!');
-    let numeroSecreto = 5;
+    let numeroSecreto = parseInt(Math.random() * 10 + 1);
     let numeroJogador
     let pontos = 0;
     let erros = 0;
@@ -18,7 +18,7 @@ function jogoNS(){
         if (numeroJogador == numeroSecreto){
             alert('Você acertou, ganhou um ponto!');
             pontos += 1;
-            numeroSecreto = Math.floor(Math.random() * 10);
+            numeroSecreto = parseInt(Math.random() * 10);
         } else {
             if (numeroJogador > numeroSecreto){
                 alert(`Você errou! O número ${numeroJogador} é maior`)
@@ -31,7 +31,7 @@ function jogoNS(){
         if (erros == erroAlt){
             pontos -= 1;
             erros = 0;
-            numeroSecreto = Math.floor(Math.random() * 10);
+            numeroSecreto = parseInt(Math.random() * 10);
             alert('Você teve 3 erros, o número secreto foi alterado!');
         }
         if (pontos == -3){

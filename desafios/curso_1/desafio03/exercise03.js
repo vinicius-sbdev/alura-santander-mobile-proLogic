@@ -1,7 +1,7 @@
 //Contador crescente
 function contCresc(){
     //Variável que armazena o número atual do contador
-    contador = 1;
+    let contador = 1;
 
     //Loop que acrescenta +1 ao contador até determinado ponto
     while (contador < 11){
@@ -12,7 +12,7 @@ function contCresc(){
 }
 //Contador decrescente
 function contDecresc(){
-    contador = 10
+    let contador = 10
     
     while (contador > 0){
         console.log(`Contador: ${contador}`);
@@ -21,7 +21,7 @@ function contDecresc(){
 }
 //Contagem regressiva
 function contRegress(){
-    contador = parseInt(prompt('Digite um número: '));
+    let contador = parseInt(prompt('Digite um número: '));
 
     while (contador > -1){
         console.log(`Contador: ${contador}`)
@@ -30,8 +30,8 @@ function contRegress(){
 }
 //Contagem progressiva
 function contProgress(){
-    numeroCont = parseInt(prompt('Digite um número: '));
-    contador = 0;
+    let numeroCont = parseInt(prompt('Digite um número: '));
+    let contador = 0;
 
     while (contador < numeroCont){
         console.log(`Contador: ${contador}`)
