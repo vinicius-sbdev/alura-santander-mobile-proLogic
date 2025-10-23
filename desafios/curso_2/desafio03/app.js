@@ -50,3 +50,5 @@ function valorFatorial() {
     // Exibição final
     resultado_fatorial.innerHTML = `O fatorial de ${fatorial} é ${resultado}.`;
 }
+
+document.getElement
